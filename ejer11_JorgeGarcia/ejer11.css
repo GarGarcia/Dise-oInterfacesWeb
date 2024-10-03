@@ -1,0 +1,25 @@
+.caja1{
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    background-color: #2ee5a5;
+    z-index: 3;
+}
+
+.caja2{
+    position: absolute;
+    margin-left: 20px;
+    margin-top: 20px;
+    height: 100px;
+    width: 100px;
+    background-color: #B62BC7;
+}
+
+.caja3{
+    position: absolute;
+    margin-left: 40px;
+    margin-top: 40px;
+    height: 100px;
+    width: 100px;
+    background-color: #DEC330;
+}
