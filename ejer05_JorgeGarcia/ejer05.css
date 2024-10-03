@@ -1,0 +1,34 @@
+html{
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+article{
+    background-color: lightgrey;
+    border: 1px solid;
+    border-radius: 10px;
+    border-color: black;
+    padding: 15px;
+    margin: 15px;
+}
+
+header{
+    background-color: yellow;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.title{
+    border-color: black;
+    border-bottom: 3px solid;
+    text-align: center;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+
+footer{
+    text-align: center;
+}
+
