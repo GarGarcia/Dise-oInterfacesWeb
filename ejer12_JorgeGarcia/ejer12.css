@@ -1,0 +1,13 @@
+.boton1{
+    display: inline-block;
+    background-color: #FFB6C1;
+    height: 50px;
+    width: 100px;
+}
+
+.boton2{
+    display: inline-block;
+    background-color: #ADD8E6;
+    height: 50px;
+    width: 100px;
+}
