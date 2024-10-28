@@ -86,3 +86,10 @@ footer p{
     margin: 10px;
 }
 
+.charging{
+    display: inline-block;
+}
+
+.sobre_mi h2{
+    display: inline-block;
+}

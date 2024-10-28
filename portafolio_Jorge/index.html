@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Portafolio</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
 </head>
 <body>
     <header>
@@ -21,7 +21,7 @@
 
     <div class="content">
         <section class="sobre_mi">
-            <h2>Sobre Mí</h2> <i></i>
+            <h2>Sobre Mí</h2>  <div id="charging" class="fa"></div> 
             <p>Soy un apasionado de los ordenadores, los videojuegos y se me da bien programar.</p>
         </section>
 
@@ -29,20 +29,45 @@
             <h2>Proyectos</h2>
             <div class="project">
                 <h3>Creación de un videojuego</h3>
-                <img src="img/videojuegos.jpeg" alt="">
+                <img src="img/videojuegos.jpeg" alt="personajes de videojuegos">
                 <p>Este proyecto surgio por mi pasión por los videojuegos
                 y la curiosidad de saber más sobre ellos</p>
             </div>
             <div class="project">
                 <h3>Diseño y desarrollo de una web</h3>
-                <img src="img/web.jpg" alt="">
+                <img src="img/web.jpg" alt="programador programando en un portatil">
                 <p>Este proyecto surgio por el pedido de mi madre de hacer una página web para su negocio</p>
             </div>
         </section>
+        <video controls>
+            <source src="video/Video Curriculum Vitae.mp4" type="video/mp4">
+            <track kind="subtitles" src="video/captions.vtt" srclang="es" label="Español">
+            <track kind="subtitles" src="video/subtitles.vtt" srclang="en" label="English">
+        </video> 
     </div>
 
-    <footer>
-        <p>© 2024 Jorge García Bono - Todos los derechos reservados.</p>
-    </footer>
-</body>
-</html>
+    <!-- <footer>
+        <p>© 2024 Jorge García Bono - Todos los derechos reservados.</p> -->
+    <!-- </footer> -->
+
+    <script>
+        function chargebattery() {
+          var a;
+          a = document.getElementById("charging");
+          a.innerHTML = "&#xf244;";
+          setTimeout(function () {
+            a.innerHTML = "&#xf243;";
+          }, 1000);
+          setTimeout(function () {
+            a.innerHTML = "&#xf242;";
+          }, 2000);
+          setTimeout(function () {
+            a.innerHTML = "&#xf241;";
+          }, 3000);
+          setTimeout(function () {
+            a.innerHTML = "&#xf240;";
+          }, 4000);
+        }
+        chargebattery();
+        setInterval(chargebattery, 5000);
+        </script> 
