@@ -10,11 +10,69 @@
     <header>
         <h1>Reserva tu habitación en Hotel Paradiso</h1>
     </header>
-    <main>
-        <form action="#" method="post">
-            <label for="name">Nombre:</label>
-            <input type="text" id="name" name="user_name" required/>
-        </form>
-    </main>
+
+    <form action="#" method="post">
+        <label for="name">Nombre:</label>
+        <input type="text" id="name" name="user_name" placeholder="Introduce tu nombre completo" required>
+
+        <label for="email">Correo:</label>
+        <input type="text" id="email" name="email" placeholder="Introduce tu correo electrónico" required>
+    
+        <label for="telefono">Teléfono:</label>
+        <input type="text" id="telefono" name="telefono" placeholder="Introduce tu número de teléfono" required>
+
+        <label for="fechallegada">Fecha de llegada:</label>
+        <input type="date" id="fechallegada" name="fechallegada" min="2024-11-21" required>
+
+        <label for="fechasalida">Fecha de salida:</label>
+        <input type="date" id="fechasalida" name="fechasalida" min="2024-11-22" required>
+
+        <label for="tipo-habitacion">Tipo de habitación:</label>
+        <select id="tipo-habitacion" name="tipo-habitacion">
+            <option value="individual">Habitación individual</option>
+            <option value="doble">Habitación doble</option>
+            <option value="suite">Suite</option>
+        </select>
+        
+        <label for="huespedes">Numero de huéspedes:</label>
+        <input type="number" id="huespedes" name="huespedes" min="1" max="10" required>
+        
+        <label for="horallegada">Hora de llegada:</label>
+        <input type="time" id="horallegada" name="horallegada">
+
+        <fieldset>
+            <legend>Servicios adicionales:</legend>
+            <div>
+                <input type="checkbox" id="desayuno" name="servicios" value="desayuno">
+                <label for="desayuno">Desayuno incluido</label>
+            </div>
+            <div>
+                <input type="checkbox" id="aparcamiento" name="servicios" value="aparcamiento">
+                <label for="aparcamiento">Aparcamiento gratuito</label>
+            </div>
+            <div>
+                <input type="checkbox" id="cama-supletoria" name="servicios" value="cama-supletoria">
+                <label for="cama-supletoria">Cama supletoria</label>
+            </div>
+        </fieldset>
+
+        <label for="comentarios">Comentarios:</label>
+        <textarea id="comentarios" name="comentarios">
+        </textarea>
+
+        <label for="color">Color preferido para la decoración:</label>
+        <select id="color" name="color">
+            <option value="beige">Beige</option>
+            <option value="lightblue">Azul claro</option>
+            <option value="lightgray">Gris suave</option>
+            <option value="white">Blanco</option>
+            <option value="mintgreen">Verde menta</option>
+        </select>
+        <div id="submit">
+            <input type="checkbox" id="politica" name="politica" required>
+            <label for="politica">He leído y acepto la política de privacidad</label>
+        </div>
+        <button type="submit">Confirmar Reserva</button>
+    </form>
 </body>
 </html>

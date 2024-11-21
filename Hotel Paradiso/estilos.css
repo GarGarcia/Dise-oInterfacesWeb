@@ -1,0 +1,74 @@
+body {
+    background-color: #f5f5dc;
+    color: #002147;
+    font-size: 18px;
+    font-family: Arial, sans-serif;
+}
+
+header h1 {
+    text-align: center;
+    animation: desvanecer 2s ease-in-out;
+}
+
+header h1::after{
+    content: "🌴";
+}
+
+
+header h1 span {
+    font-size: 1.2em;
+    color: #0073e6;
+}
+
+form {
+    width: 60%;
+    margin: auto;
+    background: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    margin: 15px 0 5px;
+}
+
+form input, form select, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+form input:focus, form select:focus, form textarea:focus {
+    border-color: #28a745;
+    transition: border-color 0.5s;
+}
+
+form button {
+    background-color: #002147;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+form button:hover {
+    background-color: #0073e6;
+}
+
+@keyframes desvanecer {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
