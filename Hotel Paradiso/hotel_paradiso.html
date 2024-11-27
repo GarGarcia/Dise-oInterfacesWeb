@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilos_hotel_paradiso.css">
+</head>
+<body>
+    <header>
+        <div class="titulo">
+            <img src="img/logotipo_paradiso.PNG" alt="Logotipo">
+            <h1>Hotel Paradiso</h1>
+        </div>
+        <nav>
+            <ul class="Menu">
+                <!-- Menú izquierda -->
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#reserva">Reserva</a></li>
+             
+                <!-- Menú derecha -->
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="introduccion">
+        <h2>Bienvenido a Hotel Paradiso</h2>
+        <p class="introduccion-texto"><strong>¡Bienvenidos al Hotel Paradiso!</strong>
+            Enclavado en un lugar lleno de tranquilidad y belleza, el Hotel Paradiso es el
+            destino perfecto para desconectar del estrés diario y disfrutar de momentos
+            inolvidables. Nos enorgullece ofrecerle un ambiente cálido y acogedor,
+            combinado con servicios de alta calidad diseñados para hacer de su estancia
+            una experiencia única.
+            Desde nuestras cómodas y elegantes habitaciones hasta nuestros espacios de
+            recreo y relajación, todo está pensado para su máximo confort. Nuestro hotel
+            cuenta con un equipo amable y profesional siempre dispuesto a atenderle, ya
+            sea para disfrutar de un desayuno junto a la piscina, planificar excursiones
+            locales o simplemente relajarse con una copa al atardecer.
+            Ya sea que nos visite por negocios, en pareja o en familia, encontrará en el
+            Hotel Paradiso el lugar ideal para crear recuerdos que durarán toda la vida.
+            ¡Esperamos verle pronto y hacer de su estancia algo realmente especial!
+        </p>
+        <img src="img/imagen_web_paradiso.PNG" alt="Hotel lujoso con detalles de oro brillantes">
+    </section>
+    
+    <section class="hotel-form">
+        <h1>Reserva tu habitación en Hotel Paradiso</h1>
+        <form action="#" method="post">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="user_name" placeholder="Introduce tu nombre completo" required>
+
+            <label for="email">Correo:</label>
+            <input type="text" id="email" name="email" placeholder="Introduce tu correo electrónico" required>
+        
+            <label for="telefono">Teléfono:</label>
+            <input type="text" id="telefono" name="telefono" placeholder="Introduce tu número de teléfono" required>
+
+            <label for="fechallegada">Fecha de llegada:</label>
+            <input type="date" id="fechallegada" name="fechallegada" min="2024-11-21" required>
+
+            <label for="fechasalida">Fecha de salida:</label>
+            <input type="date" id="fechasalida" name="fechasalida" min="2024-11-22" required>
+
+            <label for="tipo-habitacion">Tipo de habitación:</label>
+            <select id="tipo-habitacion" name="tipo-habitacion">
+                <option value="individual">Habitación individual</option>
+                <option value="doble">Habitación doble</option>
+                <option value="suite">Suite</option>
+            </select>
+            
+            <label for="huespedes">Numero de huéspedes:</label>
+            <input type="number" id="huespedes" name="huespedes" min="1" max="10" required>
+            
+            <label for="horallegada">Hora de llegada:</label>
+            <input type="time" id="horallegada" name="horallegada">
+
+            <fieldset>
+                <legend>Servicios adicionales:</legend>
+                <div>
+                    <input type="checkbox" id="desayuno" name="servicios" value="desayuno">
+                    <label for="desayuno">Desayuno incluido</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="aparcamiento" name="servicios" value="aparcamiento">
+                    <label for="aparcamiento">Aparcamiento gratuito</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="cama-supletoria" name="servicios" value="cama-supletoria">
+                    <label for="cama-supletoria">Cama supletoria</label>
+                </div>
+            </fieldset>
+
+            <label for="comentarios">Comentarios:</label>
+            <textarea id="comentarios" name="comentarios">
+            </textarea>
+
+            <label for="color">Color preferido para la decoración:</label>
+            <select id="color" name="color">
+                <option value="beige">Beige</option>
+                <option value="lightblue">Azul claro</option>
+                <option value="lightgray">Gris suave</option>
+                <option value="white">Blanco</option>
+                <option value="mintgreen">Verde menta</option>
+            </select>
+            <div id="submit">
+                <input type="checkbox" id="politica" name="politica" required>
+                <label for="politica">He leído y acepto la política de privacidad</label>
+            </div>
+
+            <button type="submit">Confirmar Reserva</button>
+        </form>
+    </section>
+
+    <section class="informacion">
+        <h2>Información de nuestro hotel</h2>
+        <p><strong>Dirección:</strong> Calle del Hotel Paradiso, 123</p>
+        <p><strong>Teléfono:</strong> +34 123 456 789</p>
+        <p><strong>Correo electrónico:</strong> reservas@hotelparadiso.com</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6156.173671247085!2d2.7509204!3d39.5125298!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12979643a07048f1%3A0x40ae4fbb9ca0bb50!2sHotel%20Paradiso%20Garden!5e0!3m2!1sca!2ses!4v1732711143371!5m2!1sca!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <footer>
+        <p><strong>© 2024 Hotel Paradiso - Todos los derechos reservados.</strong></p>
+        <a href="#privacidad">Política de privacidad</a>
+        
+    </footer>
+</body>
+</html>

@@ -1,0 +1,147 @@
+/* General */
+body{
+    background-color: white;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* Cabecera */
+header{
+    background-color: #003366;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+div.titulo{
+    font-size: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.titulo img{
+    max-width: 50px;
+}
+
+div.titulo h1{
+    padding-left: 20px;
+    color: white;
+}
+
+/* Menu */
+header nav ul{
+    display: flex; 
+    list-style: none; 
+    justify-content: space-between; 
+    padding: 0;
+}
+
+header nav ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+
+header nav ul li a:hover{
+    color: #FFD700;
+    text-decoration: none;
+}
+
+header nav ul li a:active{
+    font-size: 15px;
+}
+
+header nav ul li a:focus{
+    text-decoration: underline;
+}
+
+
+/* Contenido */
+.introduccion h2{
+    text-align: center;
+    color: #003366;
+}
+
+.introduccion-texto::first-letter{
+    font-size: 36px;
+    color: #87CEFA;
+}
+
+/* Formulario Reservas */
+section.hotel-form{
+    margin-top: 130px;
+}
+
+section.hotel-form h1 {
+    text-align: center;
+    animation: desvanecer 2s ease-in-out;
+}
+
+section.hotel-form h1::after{
+    content: "🌴";
+}
+
+
+section.hotel-form h1 span {
+    font-size: 1.2em;
+    color: #0073e6;
+}
+
+section.hotel-form form {
+    width: 60%;
+    margin: auto;
+    background-color: #f0f0f0;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+section.hotel-form form label {
+    display: block;
+    margin: 15px 0 5px;
+}
+
+section.hotel-form form input, form select, form textarea, form button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+section.hotel-form form input:focus, form select:focus, form textarea:focus {
+    border-color: #28a745;
+    transition: border-color 0.5s;
+}
+
+section.hotel-form form button {
+    background-color: #002147;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+section.hotel-form form button:hover {
+    background-color: #0073e6;
+}
+
+@keyframes desvanecer {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Información */
+.informacion{
+    text-align: center;
+    margin-top: 130px;
+}
+
