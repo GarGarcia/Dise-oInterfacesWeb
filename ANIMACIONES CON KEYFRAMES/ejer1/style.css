@@ -1,0 +1,15 @@
+#bloque{
+    width: 200px;
+    height: 100px;
+    background-color: red;
+    animation: rolling360 3s ease-in-out forwards;
+}
+
+@keyframes rolling360 {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
