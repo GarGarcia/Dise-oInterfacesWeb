@@ -145,3 +145,34 @@ section.hotel-form form button:hover {
     margin-top: 130px;
 }
 
+/* Footer */
+
+footer{
+    margin-top: 40px;
+    background-color: #003366;
+    color: white;
+    text-align: center;
+}
+
+footer a{
+    text-decoration: none;
+    color: white;
+}
+
+footer a{
+    text-decoration: none;
+    color: white;
+}
+
+.redes-sociales a{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.redes-sociales a:hover{
+    transform: scale(1.2);
+}
+
+.redes-sociales a:focus{
+    color: #FFD700;
+}
