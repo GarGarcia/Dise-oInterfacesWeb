@@ -1,0 +1,16 @@
+#circulo{
+    height: 100px;
+    width: 100px;
+    background-color: blue;
+    border-radius: 50%;
+    animation: viaje 5s ease-in;
+}
+
+@keyframes viaje {
+    0%{
+        transform: translate(0px);
+    }
+    100%{
+        transform: translate(2000px);
+    }
+}

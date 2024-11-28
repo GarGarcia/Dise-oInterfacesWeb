@@ -1,0 +1,25 @@
+body{
+    text-align: center;
+}
+
+#texto:hover{
+    animation: zoom 3s linear;
+}
+
+@keyframes zoom {
+    0%{
+        transform: scale(1);
+    }
+
+    33%{
+        transform: scale(2);
+    }
+
+    66%{
+        transform: scale(0.25);
+    }
+
+    100%{
+        transform: scale(1);
+    }
+}
