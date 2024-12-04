@@ -1,0 +1,22 @@
+#container{
+    width: 300px;
+    display: grid;
+    grid-template-columns: repeat(3, 150px);
+    grid-template-rows: repeat(3, 50px);
+    gap: 2px;
+}
+
+.cabecera{
+    text-align: center;
+    align-content: center;
+    background-color: #6a7c88;
+    color: white;
+    grid-column: 1 / 4;
+}
+
+.caja{
+    text-align: center;
+    align-content: center;
+    background-color: #6a7c88;
+    color: white;
+}
