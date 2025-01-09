@@ -1,0 +1,64 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#titulo{
+    text-align: center;
+}
+
+#container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px;
+}
+
+#community{
+    text-align: center;
+    grid-row: span 2;
+    border: 3px double blue;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+#professional{
+    text-align: center;
+    grid-row: span 2;
+    border: 3px double blue;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+#enterprise{
+    text-align: center;
+    grid-row: span 3;
+    border: 3px double blue;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+#texto{
+    align-content: center;
+    grid-column: span 2;
+    background-color: blue;
+    color: white;
+    border: 1.5px solid blue;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.precio{
+    color: blue;
+}
+
+@media (max-width: 640px){
+    #container{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
+    #texto{
+        grid-column: span 1;
+        grid-row: auto;
+    }
+}
